@@ -194,3 +194,33 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+//FREQUENT QUESTIONS
+const buttons = document.querySelectorAll('button');
+const questionDivs = document.querySelectorAll('.q');
+const is = document.querySelectorAll('button i');
+const ps = document.querySelectorAll('.q p');
+
+let allHights = [];
+let psHeights = [];
+ps.forEach(p => {
+  psHeights.push(p.offsetHeight);
+});
+
+for(let i = 0;i<questionDivs.length;i++){
+   allHights.push(questionDivs[i].offsetHeight);
+   questionDivs[i].style.height = `calc(${allHights[i]}px - ${psHeights[i]}px - 20px)`;
+}
+
+for(let i = 0;i<buttons.length;i++){
+  buttons[i].addEventListener('click',_=>{
+    buttons[i].classList.toggle('toggle');
+    if(buttons[i].classList.contains('toggle')){
+      buttons[i].parentNode.style.height = `${allHights[i]}px`;
+      is[i].style.transform = `rotate(45deg)`;
+    }else{
+      questionDivs[i].style.height = `calc(${allHights[i]}px - ${psHeights[i]}px - 20px)`;
+      is[i].style.transform = `rotate(0deg)`;
+    }
+  });
+}
