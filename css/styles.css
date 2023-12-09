@@ -442,6 +442,7 @@ h2 {
     font-size: 1rem;
     cursor: pointer;
     background-color: #fceef2;
+    font-size: var(--h3-font-size);
   }
   .accordion > div button i{
     transition: 200ms ease;
