@@ -35,8 +35,8 @@
                     </li>
                    
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">
-                            <i class="fas fa-briefcase nav-link-icon"></i> Serviços
+                        <a href="#FAQ" class="nav-link">
+                            <i class="fas fa-briefcase nav-link-icon"></i> FAQ
                         </a>
                     </li>
                    
@@ -89,11 +89,12 @@
                     </div>
                     <div class="home-data">
                         <h1 class="home-data-title">Oi, Eu sou a Anne</h1>
-                        <h3 class="home-data-subtitle">Psicoterapeuta clínica</h3>
+                        <h3 class="home-data-subtitle">Psicóloga clínica</h3>
                         <p class="home-data-description">Minha abordagem terapêutica é centrada no cliente, valorizando a singularidade de cada indivíduo.</p>
-                        <a href="#contact" class="button button-flex">
+                        <a href="https://api.whatsapp.com/send?phone=5521995728007" target="_blank" class="button button-flex">
                             Vamos conversar? <i class="fab fa-whatsapp button-icon"></i>
                         </a>
+                        
                     </div>
                 </div>
            
@@ -136,7 +137,7 @@
         </section>
 
         <!-- frequent questions -->
-        <section class="qualification section">
+        <section class="qualification section" id="FAQ">
             <div class="accordion">
                 <h2>Dúvidas frequentes</h2>
                 <div class="q">
@@ -152,7 +153,7 @@
                 <div class="q">
                   <button>Qual o valor das sessões?<i class="fa-solid fa-add"></i></button>
                   <p>
-                    Entre em contato via WhatsApp para receber informações sobre os valores. O pagamento pode ser feito a cada sessão ou através de pacote mensal, via PIX ou Transferência. </p>
+                    Entre em contato para receber informações sobre os valores. O pagamento ocorre a cada sessão ou através de pacote mensal, via PIX ou Transferência. </p>
                 </div>
                   
                   <div class="q">
@@ -164,7 +165,7 @@
                   <div class="q">
                     <button>Atende pessoas que moram em outros estados ou paíes?<i class="fa-solid fa-add"></i></button>
                     <p>
-                        Sim, com a terapia on-line isso é possível. Os atendimentos são realizados com ajuda de ferramentas como Google Meet, Zoom e outras plataformas de videoconferência. Atendo pacientes de todo o Brasil e Brasileiros que residem no exterior</p>
+                        Sim, com a terapia on-line isso é possível. Os atendimentos são realizados com ajuda de ferramentas como Google Meet, Zoom e outras plataformas de videoconferência. Atendo pacientes de todo o Brasil e Brasileiros que residem no exterior.</p>
                   </div>
 
               </div>
@@ -205,20 +206,20 @@
                     </div>
                 </div>
 
-                <form action="" class="contact-form grid">
+                <form action="https://formsubmit.co/anneventapane@gmail.com" method="POST" target="_blank" class="contact-form grid">
                     <div class="contact-inputs grid">
                         <div class="contact-content">
                             <label for="" class="contact-label">Nome</label>
                             <input type="text" class="contact-input">
                         </div>
                         <div class="contact-content">
-                            <label for="" class="contact-label">E-mail</label>
+                            <label for="email" class="contact-label">E-mail</label>
                             <input type="email" class="contact-input">
                         </div>
                     </div>
                     <div class="grid">
                         <div class="contact-content">
-                            <label for="" class="contact-label"></label>
+                            <label for="Título" class="contact-label">Título</label>
                             <input type="text" class="contact-input">
                         </div>
                         <div class="contact-content">
@@ -226,12 +227,16 @@
                             <textarea style="resize: none;" rows="5" class="contact-input"></textarea>
                         </div>
                     </div>
+
+                            <button type="submit"  class="contact-button">
+                    
+                                <a class="button button-flex">
+                                    Envie uma mensagem <i class="fab fa-whatsapp button-icon"></i>
+                                </a>
+                            </button>
                 </form>
-                <div class="contact-button">
-                    <a href="#" class="button button-flex">
-                        Envie uma mensagem<i class="fab fa-whatsapp button-icon"></i>
-                    </a>
-                </div>
+              
+              
             </div>
         </section>
     </main>
@@ -258,7 +263,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer-copy">&#169; Site desenvolvido por Patrícia Cavalcante. Alguns direitos reservados</p>
+            <p class="footer-copy">&#169; Anne psicologia - <span id="currentYear"></span> | Site desenvolvido por <a target="_blank"  class="footer-link"  href="https://www.patticavalcante.com.br/">Patrícia Cavalcante </a>. Alguns direitos reservados</p>
         </div>
     </footer>
 

@@ -1,3 +1,4 @@
+
 /* MENU SHOW Y HIDDEN */
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -9,6 +10,8 @@ if (navToggle) {
     navMenu.classList.add("show-menu");
   });
 }
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
 
 /* MENU HIDDEN */
 if (navClose) {
@@ -224,3 +227,4 @@ for(let i = 0;i<buttons.length;i++){
     }
   });
 }
+

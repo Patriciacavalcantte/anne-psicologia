@@ -85,6 +85,12 @@ body.dark-theme {
 html {
   scroll-behavior: smooth;
 }
+button {
+  
+  all: initial;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
 
 body {
   margin: 0 0 var(--header-height) 0;
@@ -322,6 +328,13 @@ img {
   font-size: 1.25rem;
 }
 
+.home-social {
+  display: none;
+
+}
+.home-social-icon {
+  display: none;
+}
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -887,6 +900,23 @@ h2 {
 .footer .footer-social {
   color: #fff;
 }
+.preview-container {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.preview-link {
+  position: relative;
+}
+
+.preview-link:hover + .preview-container {
+  display: block;
+}
+
 
 /* SCROLL UP */
 .scrollup {
